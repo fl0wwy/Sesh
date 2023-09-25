@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Karla', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5px;
+}
+
+.image_cover{
+    background-image: url(assets/sesh.png);
+    background-position: center;
+    background-position-y: -10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (orientation: landscape) and (max-width: 1114px){
+}
+
+@media screen and (max-height: 1280px){
+    .image_cover{
+        background-position: center;
+    }
+}

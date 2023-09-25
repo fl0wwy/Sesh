@@ -1,0 +1,138 @@
+.nav_img{
+    height: 66px;
+    width: 55px;   
+    margin-left: 2.5rem;
+    margin-right: 5rem;
+}
+
+.nav_container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+}
+
+.nav_container *{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.nav_container.scrolled *{
+    color: black;
+}
+
+.shop{
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.shop *{
+    padding: 0 5px;
+}
+
+.shop div{
+    margin: 0;
+}
+
+.search_container i{
+    margin: 0;
+}
+
+.links a{
+    padding: 0 20px;
+    color: unset;
+    text-decoration: transparent;
+    text-underline-offset: 10px;
+    letter-spacing: 1px;
+}
+
+.links a:hover{
+    animation-name: underline;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+.cart a{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-decoration: transparent;
+    text-underline-offset: 10px;
+    box-sizing: border-box;
+    height: 20px;
+}
+
+.cart a i{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.search_container i{
+    text-decoration: transparent;
+    text-underline-offset: 10px;
+}
+
+.search_container:hover i{
+    animation-name: underline;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.cart:hover i{
+    animation-name: underline;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes underline{
+    to{text-decoration: underline;}
+}
+
+@media screen and (max-height: 926px){
+    .nav_container{
+        max-width: 80vw;
+    }
+    
+    .nav_container *{
+        font-size: 14px;
+    }
+
+    .search_container i{
+        margin: 0 10px 0 0;
+    }
+    
+    .shop *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .cart a{
+        margin: 0;
+    }
+
+    .links{
+        display: none;
+    }
+
+    
+    .nav_img{
+        transform: scale(70%);
+        margin: 0;
+    }
+
+    .shop{
+        margin: 0;
+    }
+
+}

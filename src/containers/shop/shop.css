@@ -1,0 +1,14 @@
+.shop_container{
+    min-height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.shop_container h1{
+    color: #1b1b1b;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    margin-bottom: 50px;
+    font-size: 1.75rem;
+    font-family: Arial Black, "Arial Bold", "Arial-BoldMT", Gadget, sans-serif;
+}
