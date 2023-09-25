@@ -37,20 +37,20 @@ const Nav = () => {
   }, [])
 
   return (
-    <div className={`nav_container ${scrolling ? "scrolled" : ""}`}>
+    <nav className={`nav_container ${scrolling ? "scrolled" : ""}`}>
       <a href="/index.html"><img className='nav_img' src={sesh_skull} alt="skull_logo" /></a>
       <div className='links'>
         <a href="">Products</a>
         <a href="">Team</a>
       </div>
       <div className='shop'> 
-        <div className='search_container'><i class="fa-solid fa-magnifying-glass fa-sm"></i></div>
+        <div className='search_container'><i className="fa-solid fa-magnifying-glass fa-sm"></i></div>
         <div className='cart'>
-          <a href='/'><i class="fa-solid fa-cart-shopping fa-sm"></i> { item } / ${ price }</a>
+          <a href='/'><i className="fa-solid fa-cart-shopping fa-sm"></i> { item } / ${ price }</a>
         </div>
       </div>
 
-    </div>
+    </nav>
   )
 }
 
